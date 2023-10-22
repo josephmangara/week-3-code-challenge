@@ -37,18 +37,15 @@ function displayFilmDetails(details){
       <p>Capacity: ${details.capacity}</p>
       <p>Tickets_sold: ${details.tickets_sold}</p>
       <button id="buyTicket">Buy Ticket</button>
+      <p id="soldOutMessage" style="color: brown;"></p>
     </ul>
     `;
+// the event listener updates the tickets counter and prints out "sold out" when the tickets are exhausted.
     let buyTicketButton = document.getElementById("buyTicket");
     buyTicketButton.addEventListener("click", () => {
         if(details.tickets_sold < details.capacity){
         return details.tickets_sold++;
-       }else if(details.tickets_sold === details.capacity){return "Sold out!";}
+       }else if(details.tickets_sold === details.capacity){
+        soldOutMessage.textContent = "Sold out!";}
     })
-}
-// create a buy ticket button for each film.
-// function buyTicket(){}
-// let buyTicketButton = document.createElement('button');
-//     buyTicketButton.textContent ="Buy Ticket";
-//  buyTicketButton.addEventListener("click", () => increaseTicketsSold(details));
-//  li.appendChild(buyTicketButton);
+};
