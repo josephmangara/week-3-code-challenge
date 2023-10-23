@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function (){
 });
 
 function getMovies(){
-    fetch("http://localhost:3000/films")
+    fetch("https://my-json-server.typicode.com/josephmangara/week-3-code-challenge/films")
     .then(res => res.json())
     .then(data => {
         displayMovieDetails(data)
