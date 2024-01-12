@@ -15,7 +15,7 @@ body {
 }
 
 #films li {
-    background-color: #fff;
+    background-color: #73f584;
     border: 1px solid #ddd;
     margin: 5px;
     padding: 10px;
@@ -23,7 +23,7 @@ body {
 }
 
 #films li:hover {
-    background-color: #f5f5f5;
+    background-color: #30db47;
 }
 
 #films img {
