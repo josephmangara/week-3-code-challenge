@@ -48,6 +48,7 @@ function displayFilmDetails(details){
 // the event listener updates the tickets counter and prints out "sold out" when the tickets are exhausted.
     let buyTicketButton = document.getElementById("buyTicket");
     let availableTickets = document.getElementById("availableTickets");
+    
     buyTicketButton.addEventListener("click", () => {
         if(details.tickets_sold < details.capacity){
         details.tickets_sold++;

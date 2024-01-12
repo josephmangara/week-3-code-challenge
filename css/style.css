@@ -1,3 +1,55 @@
-body {background-color: rgb(154, 247, 182);}
+body {
+    background-color: rgb(154, 247, 182);
+}
+#title {
+    text-align: center;
+    
+}
+#purchaseTickets {
+    text-align: center;
+}
 
+#films {
+    list-style: none;
+    padding: 0;
+}
 
+#films li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#films li:hover {
+    background-color: #f5f5f5;
+}
+
+#films img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#films p {
+    margin: 5px 0;
+}
+
+#buyTicket {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#soldOutMessage {
+    color: brown;
+}
